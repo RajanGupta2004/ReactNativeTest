@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Home = () => {
+const HomeDrawer = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>HomeDrawer</Text>
     </View>
   );
 };
 
-export default Home;
+export default HomeDrawer;
