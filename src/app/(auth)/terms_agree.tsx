@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const profile = () => {
+const TermsAgree = () => {
   return (
     <View>
-      <Text>profile</Text>
+      <Text>TermsAgree</Text>
     </View>
   );
 };
 
-export default profile;
+export default TermsAgree;

@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const HomeDrawer = () => {
+const VerifyOTP = () => {
   return (
     <View>
-      <Text>HomeDrawer</Text>
+      <Text>VerifyOTP</Text>
     </View>
   );
 };
 
-export default HomeDrawer;
+export default VerifyOTP;
