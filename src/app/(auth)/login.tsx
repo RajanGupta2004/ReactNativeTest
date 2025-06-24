@@ -1,5 +1,6 @@
 import ButtonComp from "@/src/components/atoms/ButtonComp";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import { router } from "expo-router";
 import React, { useState } from "react";
 import {
   StyleSheet,
@@ -16,6 +17,9 @@ const Login = () => {
   const [visible, setVisible] = useState(false);
   const [countryCode, setCountryCode] = useState("91");
   const [countryName, setCountryName] = useState("India");
+  const Go_to_verifyOTP = () => {
+    router.push("/(auth)/verify_otp");
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -42,7 +46,7 @@ const Login = () => {
           <View style={styles.input_container}>
             <View style={{}}>
               <Text style={{ fontSize: moderateScale(17), fontWeight: "500" }}>
-                + {countryCode}
+                {countryCode}
               </Text>
               <View style={styles.horizontal_line} />
             </View>
@@ -57,7 +61,11 @@ const Login = () => {
         </View>
       </View>
       <View style={styles.footer}>
-        <ButtonComp title="Next" style={{ paddingHorizontal: scale(20) }} />
+        <ButtonComp
+          title="Next"
+          style={{ paddingHorizontal: scale(20) }}
+          onPress={Go_to_verifyOTP}
+        />
       </View>
 
       {visible && (
